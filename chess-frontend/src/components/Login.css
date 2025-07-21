@@ -1,0 +1,132 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 20px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login-box h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.login-box h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.login-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.register-link {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.register-link span {
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link span:hover {
+  color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+  }
+  
+  .login-box h1 {
+    font-size: 2em;
+  }
+  
+  .login-box h2 {
+    font-size: 1.5em;
+  }
+} 
